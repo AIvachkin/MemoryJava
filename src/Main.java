@@ -9,10 +9,24 @@ public class Main {
 //        System.out.println("value = " + value);
 //        changeValue(b);
 //        System.out.println("b = " + b);
-        changeValue(value);
-        String cStr = Arrays.toString(value) ;
-        System.out.println("c = " + cStr);
+//        changeValue(value);
+//        String cStr = Arrays.toString(value) ;
+//        System.out.println("c = " + cStr);
+
+
+        Person person = new Person("Lyapis", "Trubetskoy") ;
+        System.out.println("person = " + person);
+        changePerson(person);
+        System.out.println("person = " + person);
+
     }
+
+    public static void changePerson (Person person) {
+        person.setName("Ilya");
+        person.setSurname("Lagutenko");
+    }
+
+
     public static void changeValue (int value) {
         value = 22 ;
     }
@@ -21,9 +35,9 @@ public class Main {
     }
 
     public static void changeValue (Integer [] value) {
-//        value[0] = 1 ;
+        value[0] = 99 ;
 //        value[1] = 2 ;
-        value = new Integer[]{1,2};
+//        value = new Integer[]{1,2};
 //        value []= {3,4} ;
         String valueStr = Arrays.toString(value) ;
         System.out.println("value = " + valueStr);
